@@ -14,9 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Add event listener to button
     enterButton.addEventListener("click", function () {
-        const h1Element = document.createElement("h1");
-        h1Element.textContent = "Entered Metaverse";
-        h1Element.id = "status";
-        statusParagraph.replaceWith(h1Element);
-    });
+    const h1Element = document.createElement("h1");
+    h1Element.textContent = "Entered Metaverse";
+    statusParagraph.replaceWith(h1Element); // Remove id to prevent duplicate selectors
+});
 });
